@@ -8,15 +8,13 @@ html{
 scroll-behavior:smooth;
 }
 
-background:#d4af37;
-.hero{
-position:relative;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
-}
+background:linear-gradient(
+135deg,
+#fff7c5 0%,
+#f4d35e 20%,
+#c79a2b 45%,
+#f7e08a 70%,
+#b8860b 100%);
 
 .hero-image{
 position:absolute;

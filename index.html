@@ -1,134 +1,51 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Ivona & Tomislav</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-body{
-margin:0;
-background:#000;
-font-family:Georgia,serif;
-color:white;
-text-align:center;
-}
-
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1500&q=80");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.box{
-
-padding:40px;
-
-}
-
-h1{
-
-font-size:70px;
-color:#d4af37;
-margin:0;
-}
-
-h2{
-
-font-size:30px;
-font-weight:300;
-}
-
-p{
-
-font-size:22px;
-line-height:1.7;
-}
-
-.gold{
-
-color:#d4af37;
-
-}
-
-.button{
-
-display:inline-block;
-
-margin-top:40px;
-
-padding:18px 40px;
-
-background:#d4af37;
-
-color:black;
-
-text-decoration:none;
-
-font-size:22px;
-
-border-radius:50px;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-.button:hover{
-
-transform:scale(1.08);
-
-}
-
-.section{
-
-padding:70px 20px;
-
-max-width:900px;
-
-margin:auto;
-
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="hero">
+<div id="particles"></div>
 
-<div class="box">
+<section class="hero">
 
-<h2>POZIVNICA</h2>
+<div class="overlay"></div>
 
-<h1>DESET GODINA NAS</h1>
+<img src="images/naslovna.jpg" class="hero-image">
 
-<p class="gold">
+<div class="content">
 
-Ivona ❤️ Tomislav
+<p class="invite">POZIVAJU VAS NA PROSLAVU</p>
 
-</p>
+<h1>DESET</h1>
 
-<p>
+<h2>godina nas</h2>
 
-04.09.2026.
+<h3>Ivona ❤ Tomislav</h3>
 
-<br>
+<div class="line"></div>
+
+<p class="datum">
+
+4. rujna 2026.<br>
 
 19:00 sati
 
 </p>
 
-<a class="button" href="#dalje">
+<a href="#pozivnica" class="button">
 
 OTVORI POZIVNICU
 
@@ -136,65 +53,95 @@ OTVORI POZIVNICU
 
 </div>
 
-</div>
+</section>
 
-<div class="section" id="dalje">
+<section id="pozivnica">
 
-<h1 style="font-size:50px;">Dobro došli</h1>
+<h2>Dobro došli</h2>
 
 <p>
 
-Ovu večer želimo posvetiti nama
-
-<br>
-
-i ljudima koji su dio naše priče.
+Ovu večer želimo posvetiti nama — i ljudima koji su dio naše priče.
 
 </p>
 
 <p>
 
-Vaša prisutnost bit će nam
-
-najljepši poklon.
+Vaša prisutnost bit će nam najljepši poklon.
 
 </p>
 
-<h2 class="gold">
+<h3>
 
-Kuća za proslave
+📍 Kuća za proslave<br>
 
-<br>
-
-Duga i Veseli kutak
-
-<br>
+Duga i Veseli kutak<br>
 
 Šušnjevci
 
-</h2>
-
-<p>
-
-Samci mogu povesti jednu pratnju.
-
-<br>
-
-Molimo bez djece.
-
-</p>
+</h3>
 
 <a class="button"
 
-href="https://forms.gle/"
+href="https://maps.google.com"
 
 target="_blank">
+
+OTVORI LOKACIJU
+
+</a>
+
+<br><br>
+
+<a class="button"
+
+href="#rsvp">
 
 POTVRDI DOLAZAK
 
 </a>
 
-</div>
+</section>
+
+<section id="rsvp">
+
+<h2>Potvrdite dolazak</h2>
+
+<form>
+
+<input type="text" placeholder="Ime i prezime">
+
+<select>
+
+<option>Dolazim</option>
+
+<option>Ne dolazim</option>
+
+</select>
+
+<select>
+
+<option>Bez pratnje</option>
+
+<option>Dolazim s pratnjom</option>
+
+</select>
+
+<textarea placeholder="Napomena"></textarea>
+
+<br><br>
+
+<button class="button">
+
+POŠALJI
+
+</button>
+
+</form>
+
+</section>
+
+<script src="script.js"></script>
 
 </body>
 
